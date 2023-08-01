@@ -1,17 +1,22 @@
+import React from 'react';
+
 import styles from "./app.module.css";
 import { data } from "../../utils/data";
+import { useState } from "react";
 
-function App() {
+import AppHeader from '../AppHeader/AppHeader.jsx';
+import BurgerIngredients from '../BurgerIngredients/BurgerIngredients.jsx';
+
+
+export default function App() {
+
+
   return (
-    <div className={styles.app}>
-      <pre style={{
-      	margin: "auto",
-      	fontSize: "1.5rem"
-      }}>
-      	Измените src/components/app/app.jsx и сохраните для обновления.
-      </pre>
+  <>
+    <AppHeader/>
+    <div style={{display:"flex", flexDirection:"row"}}>
+      <BurgerIngredients/>
     </div>
+  </>
   );
 }
-
-export default App;

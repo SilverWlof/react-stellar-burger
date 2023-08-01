@@ -1,0 +1,20 @@
+.header{
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100vw;
+  background-color: #1c1c21;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  padding:16px 20px;
+  cursor: pointer;
+}
+
+.links:nth-child(2){
+  margin-left: 8px;
+}
