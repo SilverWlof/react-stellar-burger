@@ -1,34 +1,37 @@
-.order{
-  width: 600px;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.ingredientsList{
+.constructorContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: end;
-  height: calc(100% - 120px);
-  
+  padding: 0;
+  margin: 60px 0 0;
+  min-width:600px;
+  height: calc(100%);
 }
-
-.ingredients{
-  overflow-y: scroll;
-  scrollbar-width: thin;
-}
-.price{
+.constructorFinalBlock {
+  margin: 16px 0 0;
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: center;
+  gap: 40px;
 }
-
-.burgerIngredient {
+.constructorPriceBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-content:center;
+  align-items:center;
+}
+.ingridientsScroll {
+  height: calc(100% - 340px);
+}
+.BurgerElement {
   margin: 16px 8px 0;
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items:center;
   gap: 8px;
+}
+.BunElement {
+  composes: BurgerElement;
+  margin: 16px 24px 2px;
 }

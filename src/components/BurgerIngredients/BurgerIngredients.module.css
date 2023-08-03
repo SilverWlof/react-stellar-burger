@@ -1,37 +1,15 @@
-.list{
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.BurgerIngredients {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing:content-box;
   overflow: hidden;
-  box-sizing: content-box;
 }
-
-.card{
-  width: 272px;
-  height: 208px;
-  text-align: center;
-  margin-right: 8px;
-  position: relative;
+.ingridientsScroll {
+  height: calc(100% - 140px);
 }
-
-.card:nth-child(2n){
-  margin-right: 24px;
-  margin-left: 16px;
-}
-
-.text{
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 24px;
-}
-.ingredientsList{
-  width: 600px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  height: 84%;
-}
-.burgerIngredients{
+.tabSection {
+  display: flex;
 }

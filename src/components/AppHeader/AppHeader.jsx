@@ -1,4 +1,4 @@
-import styles from "./AppHeader.module.css";
+import styles from "./appHeader.module.css";
 import { data } from "../../utils/data";
 import React from 'react';
 import { useState } from "react";
