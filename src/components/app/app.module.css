@@ -1,21 +1,7 @@
-.app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #b5ccc8;
-  color: #363644;
-}
-
-.sqare{
-  display: flex;
+.main{
+  display:flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.ss{
-  background-color: brown;
-  width: 100px;
-  height: 50px;
-  color: azure;
-  border: 1px solid green;
+  overflow: hidden;
+  height: calc(100vh - 168px);
 }

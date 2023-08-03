@@ -1,20 +1,19 @@
-.header{
-  height: 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.headerLink{
   max-width: 1280px;
-  width: 100vw;
-  background-color: #1c1c21;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
 }
-
+.header{
+  background-color: #1c1c21;
+  width: calc(100vw - 80px);
+  display: flex;
+  justify-content: center;
+}
 .links{
   display: flex;
   flex-direction: row;
-  padding:16px 20px;
   cursor: pointer;
-}
-
-.links:nth-child(2){
-  margin-left: 8px;
 }

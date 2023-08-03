@@ -5,13 +5,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
+  box-sizing: content-box;
 }
 
 .card{
   width: 272px;
   height: 208px;
   text-align: center;
-  margin-right: 16px;
+  margin-right: 8px;
   position: relative;
 }
 
@@ -26,14 +28,10 @@
   margin-bottom: 24px;
 }
 .ingredientsList{
-  width: 608px;
+  width: 600px;
   overflow-y: scroll;
   scrollbar-width: thin;
-  height: 600px;
-  
+  height: 84%;
 }
 .burgerIngredients{
-  width: calc(50% - 40px);
-  margin-right: 40px;
 }
-

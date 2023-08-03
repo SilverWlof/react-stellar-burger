@@ -13,38 +13,31 @@ import {ProfileIcon} from "@ya.praktikum/react-developer-burger-ui-components/di
 
 export default class AppHeader extends React.Component {
 
-  activeLink(){
-
-  }
-
-  inActiveLink(){
-
-  }
 
 render(){
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} mr-10 ml-10 mt-10`}>
+      <nav className={`${styles.headerLink} pt-4 pb-4`}>
+        <div style={{display:'flex', flexDirection:'row', justifySelf:"start"}} className="pt-4 pb-4"> 
+          <a className={`${styles.links} mr-2`}>
+            <BurgerIcon type="primary"/>
+            <p className="ml-2 text text_type_main-default">Конструктор</p>
+          </a>
+          <a className={styles.links}>
+            <ListIcon type="secondary" />
+            <p className="ml-2 text text_type_main-default text_color_inactive">Лента заказов</p>
+          </a>
+        </div>
 
-      <div style={{display:'flex', flexDirection:'row'}}> 
-        <a className={styles.links}>
-          <BurgerIcon type="primary"/>
-          <p className="ml-2 text text_type_main-default">Конструктор</p>
-        </a>
-        <a className={styles.links}>
-          <ListIcon type="secondary" />
-          <p className="ml-2 text text_type_main-default text_color_inactive">Лента заказов</p>
-        </a>
-      </div>
+        <Logo/> 
 
-      <Logo/> 
-
-      <div style={{display:'flex', flexDirection:'row'}}>
-        <a className={styles.links}>
-          <ProfileIcon type="secondary"/>
-          <p className="ml-2 text text_type_main-default text_color_inactive">Личный кабинет</p>
-        </a>
-      </div>
-
+        <div style={{display:'flex', flexDirection:'row', justifySelf:"end"}} className="pt-4 pb-4">
+          <a className={styles.links}>
+            <ProfileIcon type="secondary"/>
+            <p className="ml-2 text text_type_main-default text_color_inactive">Личный кабинет</p>
+          </a>
+        </div>
+      </nav>
     </header>
   );
 }
