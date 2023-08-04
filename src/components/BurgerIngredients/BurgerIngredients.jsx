@@ -1,4 +1,4 @@
-import styles from "./burgerIngredients.module.css";
+import styles from "./BurgerIngredients.module.css";
 import React from "react";
 import { Tab } from '@ya.praktikum/react-developer-burger-ui-components'
 import ScrollingContainer from "../scroll/scroll";
