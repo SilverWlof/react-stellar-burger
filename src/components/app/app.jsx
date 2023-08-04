@@ -1,7 +1,7 @@
 import styles from "./app.module.css";
-import AppHeader from "../appHeader/appHeader.jsx";
-import BurgerConstructor from "../burgerConstructor/burgerConstructor";
-import BurgerIngredients from "../burgerIngredients/burgerIngredients";
+import AppHeader from "../AppHeader/appHeader.jsx";
+import BurgerConstructor from "../BurgerConstructor/burgerConstructor";
+import BurgerIngredients from "../BurgerIngredients/burgerIngredients";
 import Modal from "../modal/modal";
 import React, { useEffect, useState } from "react";
 import Api from '../../utils/Api.js';
