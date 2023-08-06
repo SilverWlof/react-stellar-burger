@@ -33,7 +33,7 @@ export default IngridientElement;
 
 const IngridientElementPropTypes = PropTypes.shape({
     item: ingridientPropType,
-    count: PropTypes.number,
+    count: PropTypes.number.isRequired,
 });
 
 IngridientElement.propTypes = {

@@ -17,3 +17,13 @@
   flex-direction: row;
   cursor: pointer;
 }
+.headerLeftBar{
+  display:flex;
+  flex-direction:row;
+  justify-self:start;
+}
+.headerRightBar{
+  display:flex;
+  flex-direction:row;
+  justify-self:end;
+}

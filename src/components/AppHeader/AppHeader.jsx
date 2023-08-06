@@ -18,7 +18,7 @@ render(){
   return (
     <header className={`${styles.header} mr-10 ml-10 mt-10`}>
       <nav className={`${styles.headerLink} pt-4 pb-4`}>
-        <div style={{display:'flex', flexDirection:'row', justifySelf:"start"}} className="pt-4 pb-4"> 
+        <div className={`${styles.headerLeftBar} pt-4 pb-4`}> 
           <a className={`${styles.links} mr-2`}>
             <BurgerIcon type="primary"/>
             <p className="ml-2 text text_type_main-default">Конструктор</p>
@@ -31,7 +31,7 @@ render(){
 
         <Logo/> 
 
-        <div style={{display:'flex', flexDirection:'row', justifySelf:"end"}} className="pt-4 pb-4">
+        <div className={`${styles.headerRightBar} pt-4 pb-4`}>
           <a className={styles.links}>
             <ProfileIcon type="secondary"/>
             <p className="ml-2 text text_type_main-default text_color_inactive">Личный кабинет</p>

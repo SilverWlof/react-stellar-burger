@@ -35,6 +35,8 @@ const BurgerConstructor = (props) => {
         </div>;
     }
 
+
+
     const selectedData = [];
     for (let i = 0; i < selectedIngridients.length; i++) {
         var foundElement = fullIngridients.filter((element) => element._id === selectedIngridients[i]._id)[0];
@@ -87,16 +89,10 @@ export default BurgerConstructor;
 
 const IngridientElementPropTypes = PropTypes.shape({
     item: ingridientPropType,
-    count: PropTypes.number,
-});
+    count: PropTypes.number.isRequired,
+}).isRequired;
 
 BurgerConstructor.propTypes = {
-    fullIngridients: PropTypes.arrayOf(IngridientElementPropTypes),
-    selectedIngridients: PropTypes.arrayOf(ingridientPropType),
-    bunId: PropTypes.string,
-    handleOpenModal: PropTypes.func,
-    createOrderFunc: PropTypes.func
-};
-BurgerElement.propTypes = {
-    data: IngridientElementPropTypes
+    handleOpenModal: PropTypes.func.isRequired,
+    createOrderFunc: PropTypes.func.isRequired
 };

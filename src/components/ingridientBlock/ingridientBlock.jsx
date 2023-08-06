@@ -20,9 +20,9 @@ function ingridientBlock(props) {
 export default ingridientBlock;
 
 ingridientBlock.propTypes = {
-    Title: PropTypes.string,
-    elementType: PropTypes.string,
-    data: PropTypes.arrayOf(ingridientPropType),
-    clickHandler: PropTypes.func,
-    wrappedNode: PropTypes.node
+    Title: PropTypes.string.isRequired,
+    elementType: PropTypes.string.isRequired,
+    data: PropTypes.arrayOf(ingridientPropType).isRequired,
+    clickHandler: PropTypes.func.isRequired,
+    wrappedNode: PropTypes.node.isRequired
 };
