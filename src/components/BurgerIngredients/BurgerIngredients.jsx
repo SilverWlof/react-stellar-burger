@@ -1,4 +1,4 @@
-import styles from "./burgerIngredients.module.css";
+import styles from "./BurgerIngredients.module.css";
 import React from "react";
 import { Tab } from '@ya.praktikum/react-developer-burger-ui-components'
 import ScrollingContainer from "../scroll/scroll";
@@ -42,6 +42,12 @@ function BurgerIngredients(props) {
 export default BurgerIngredients;
 
 BurgerIngredients.propTypes = {
+<<<<<<< HEAD
     ingridients: PropTypes.arrayOf(ingridientPropType).isRequired,
     handleOpenModal: PropTypes.func.isRequired
 };
+=======
+    ingridients: PropTypes.arrayOf(ingridientPropType),
+    handleOpenModal: PropTypes.func
+};
+>>>>>>> e8ee26bc69291762b7f777b36dd9678ee9afb8b3

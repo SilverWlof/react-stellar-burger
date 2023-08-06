@@ -1,8 +1,15 @@
 import styles from "./app.module.css";
+<<<<<<< HEAD
 import AppHeader from "../appHeader/appHeader.jsx";
 import BurgerConstructor from "../burgerConstructor/burgerConstructor";
 import BurgerIngredients from "../burgerIngredients/burgerIngredients";
 import ModalOverlay from "../modalOverlay/modalOverlay";
+=======
+import AppHeader from "../AppHeader/appHeader.jsx";
+import BurgerConstructor from "../BurgerConstructor/burgerConstructor";
+import BurgerIngredients from "../BurgerIngredients/burgerIngredients";
+import Modal from "../modal/modal";
+>>>>>>> e8ee26bc69291762b7f777b36dd9678ee9afb8b3
 import React, { useEffect, useState } from "react";
 import Api from '../../utils/Api.js';
 import { apiConfig, selectedIngridientsMock, bunIdMock } from "../../utils/constants";

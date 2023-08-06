@@ -1,4 +1,4 @@
-import styles from "./burgerConstructor.module.css";
+import styles from "./BurgerConstructor.module.css";
 import React from "react";
 import { Button, CurrencyIcon, DragIcon, ConstructorElement } from '@ya.praktikum/react-developer-burger-ui-components'
 import ScrollingContainer from "../scroll/scroll";
@@ -96,3 +96,9 @@ BurgerConstructor.propTypes = {
     handleOpenModal: PropTypes.func.isRequired,
     createOrderFunc: PropTypes.func.isRequired
 };
+<<<<<<< HEAD
+=======
+BurgerElement.propTypes = {
+    data: IngridientElementPropTypes
+};
+>>>>>>> e8ee26bc69291762b7f777b36dd9678ee9afb8b3
