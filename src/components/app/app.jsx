@@ -2,7 +2,7 @@ import styles from "./app.module.css";
 import AppHeader from "../appHeader/appHeader.jsx";
 import BurgerConstructor from "../burgerConstructor/burgerConstructor";
 import BurgerIngredients from "../burgerIngredients/burgerIngredients";
-import ModalOverlay from "../modalOverlay/modalOverlay";
+import ModalBody from "../modal/modal";
 import React, { useEffect, useState } from "react";
 import Api from '../../utils/Api.js';
 import { apiConfig, selectedIngridientsMock, bunIdMock } from "../../utils/constants";
@@ -101,9 +101,9 @@ function App() {
     
     return (
         <div className={styles.app}>
-            {isModalVisible && (<ModalOverlay title={modalFormContent.Title} closeFunc={handleCloseModal}>
+            {isModalVisible && (<ModalBody title={modalFormContent.Title} closeFunc={handleCloseModal}>
                 {modalFormContent.Node }
-            </ModalOverlay>)}
+            </ModalBody>)}
             <AppHeader/>
             <main className={styles.main}>
                 <div className={styles.burgerBlock}>

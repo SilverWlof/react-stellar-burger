@@ -21,11 +21,11 @@ function BurgerIngredients(props) {
         <div className={`${styles.BurgerIngredients}`}>
             <p className="text text_type_main-large  mb-5 mt-5">Соберите бургер</p>
             <section className={styles.tabSection}>
-                <Tab value="one" active={current === 'one'} onClick={setCurrent}>Булки
+                <Tab value="Булки" active={current === 'Булки'} onClick={setCurrent}>Булки
                 </Tab>
-                <Tab value="two" active={current === 'two'} onClick={setCurrent}>Соусы
+                <Tab value="Соусы" active={current === 'Соусы'} onClick={setCurrent}>Соусы
                 </Tab>
-                <Tab value="three" active={current === 'three'} onClick={setCurrent}>Начинки
+                <Tab value="Начинки" active={current === 'Начинки'} onClick={setCurrent}>Начинки
                 </Tab>
             </section>
             <div className={styles.ingridientsScroll}>
