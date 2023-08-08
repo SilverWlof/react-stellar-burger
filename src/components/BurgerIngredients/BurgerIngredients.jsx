@@ -10,7 +10,7 @@ import ingridientPropType from "../../utils/prop-types";
 function BurgerIngredients(props) {
     const { ingridients, handleOpenModal } = props;
 
-    const [current, setCurrent] = React.useState('one');
+    const [current, setCurrent] = React.useState('Булки');
 
     const BunBlock = ingridientBlock({ Title: "Булки", elementType: "bun", data: ingridients, clickHandler: handleOpenModal, wrappedNode:IngridientElement });
     const SauceBlock = ingridientBlock({ Title: "Соусы", elementType: "sauce", data: ingridients, clickHandler: handleOpenModal, wrappedNode: IngridientElement });
