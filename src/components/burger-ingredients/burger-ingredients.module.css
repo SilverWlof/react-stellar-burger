@@ -1,0 +1,15 @@
+.BurgerIngredients {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing:content-box;
+    overflow: hidden;
+}
+.ingredientsScroll {
+    height: calc(100% - 140px);
+}
+.tabSection {
+    display: flex;
+}

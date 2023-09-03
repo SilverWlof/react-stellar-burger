@@ -1,0 +1,8 @@
+.BurgerElement {
+	margin: 16px 8px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+	gap: 8px;
+}
