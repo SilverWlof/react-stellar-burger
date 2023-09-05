@@ -35,12 +35,13 @@ function IngredientElement(props) {
     }),
   });
 
-  useEffect(() => {
-    dispatch({
-      type: SET_DRAG_STYLE_TYPE,
-      isDragged: isDrag,
-    });
-  }, [dispatch, isDrag]);
+  // useEffect(() => {
+  //   dispatch({
+  //     type: SET_DRAG_STYLE_TYPE,
+  //     isDragged: isDrag,
+  //   });
+  // }, [dispatch, isDrag]);
+  
   const selectedIngredientsList = useSelector(
     (store) => store.selectedIngredients.collection,
   );

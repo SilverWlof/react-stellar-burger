@@ -26,7 +26,7 @@ export const selectedIngredientsReducer = (
 ) => {
   switch (action.type) {
     case ADD_SELECTED_INGREDIENT: {
-      const newElement = { data: action.data, pos: state.collection.length };
+      const newElement = {key: action.key, data: action.data, pos: state.collection.length};
       const newCollection = [...state.collection, newElement].sort((a, b) =>
         a.pos > b.pos ? 1 : -1,
       );

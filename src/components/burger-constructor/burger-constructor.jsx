@@ -30,6 +30,8 @@ const BurgerConstructor = () => {
     (store) => store.selectedIngredients.totalPrice,
   );
 
+  const uuid = uuidv4();
+
   useEffect(() => {
     if (bunData || selectedIngredientsList.length > 0) {
       setCanOrder(true);
@@ -42,9 +44,11 @@ const BurgerConstructor = () => {
     collect: (monitor) => ({}),
     drop(item) {
       dispatch({
+        key: item.uuid = uuid,
         type: item.actionType,
         data: item.elementData,
-      });
+      })
+      console.log(item)
     },
   });
 
