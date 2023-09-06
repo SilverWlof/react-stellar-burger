@@ -1,7 +1,0 @@
-.ingridientBlock {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.ingridientBlockWrapper {
-  margin: 40px 0 0;
-}

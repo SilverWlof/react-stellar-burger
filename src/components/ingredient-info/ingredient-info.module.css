@@ -1,0 +1,30 @@
+.InfoBlock{
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    max-width:520px;
+    margin:0;
+    padding:0;
+}
+.InfoDetailsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.InfoDetails {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 32px;
+    text-align: center;
+}
+.InfoImage {
+    margin: 0;
+    padding: 0;
+    max-height: 240px;
+}
+.DataItem {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+}
