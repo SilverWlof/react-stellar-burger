@@ -24,9 +24,9 @@ export const selectedIngredientsReducer = (
   state = selectedCollectionState,
   action,
 ) => {
-  switch (action.type) {
+    switch (action.type) {
     case ADD_SELECTED_INGREDIENT: {
-      const newElement = {key: action.key, data: action.data, pos: state.collection.length};
+      const newElement = { data: action.data, pos: state.collection.length };
       const newCollection = [...state.collection, newElement].sort((a, b) =>
         a.pos > b.pos ? 1 : -1,
       );
@@ -54,12 +54,12 @@ export const selectedIngredientsReducer = (
         totalPrice: state.totalPrice + deltaPrice,
       };
     }
-    case INSERT_SELECTED_INGREDIENT: {
+        case INSERT_SELECTED_INGREDIENT: {
       let newPos = state.insertPosition;
       if (newPos > state.collection.length || newPos < 0) {
         newPos = state.collection.length;
-      }
-      const newElement = { data: action.data, pos: newPos };
+            }
+            const newElement = { data: action.data, pos: newPos};
       const firstPart = state.collection.filter((x) => x.pos < newPos);
       const secondPart = state.collection
         .filter((x) => x.pos >= newPos)

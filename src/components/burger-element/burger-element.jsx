@@ -10,7 +10,8 @@ import { useDrag, useDrop } from "react-dnd";
 import {
   REMOVE_SELECTED_ITEM,
   SET_INSERT_POSITION,
-  UPDATE_POSITION,
+    UPDATE_POSITION,
+    moveIngridient
 } from "../../services/actions/selectedCollection";
 
 export const BurgerElement = (props) => {
@@ -23,7 +24,7 @@ export const BurgerElement = (props) => {
         oldPos: props.elementModel.pos,
         data: props.elementModel.data,
       },
-      actionType: UPDATE_POSITION,
+        actionType: moveIngridient,
     },
     collect: (monitor) => ({
       isDrag: monitor.isDragging(),
@@ -49,7 +50,7 @@ export const BurgerElement = (props) => {
   }, [isHover]);
 
   drag(drop(ref));
-  ///
+
   function RemoveHandler() {
     dispatch({
       type: REMOVE_SELECTED_ITEM,

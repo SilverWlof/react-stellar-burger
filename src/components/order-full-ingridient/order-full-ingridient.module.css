@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 24px);
+    justify-content:space-between;
+    align-content:center;
+    gap: 16px;
+    margin: 0 24px 0 0;
+}
+.titleBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    margin:0;
+    padding:0;
+}
+.PriceBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-content: center;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}

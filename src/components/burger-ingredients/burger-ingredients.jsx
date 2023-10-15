@@ -35,9 +35,20 @@ function BurgerIngredients(props) {
       (evt) => handleScroll(evt, "three"),
       intersectionOptions,
     );
-    bunObserver.observe(bunBlockRef.current);
-    souceObserver.observe(souceBlockRef.current);
-    mainObserver.observe(mainBlockRef.current);
+      const bunObserveElement = bunBlockRef.current;
+      const souceObserveElement = souceBlockRef.current;
+      const mainObserveElement = mainBlockRef.current;
+      bunObserver.observe(bunObserveElement);
+      souceObserver.observe(souceObserveElement);
+      mainObserver.observe(mainObserveElement);
+
+
+      return () => {
+
+          bunObserver.unobserve(bunObserveElement);
+          souceObserver.unobserve(souceObserveElement);
+          mainObserver.unobserve(mainObserveElement);
+      }
   }, [bunBlockRef, souceBlockRef, mainBlockRef, scrollRef]);
   function handleScroll(evt, sourceTab) {
     switch (sourceTab) {

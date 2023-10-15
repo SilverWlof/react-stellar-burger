@@ -1,0 +1,33 @@
+.FeedElement {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    background-color: #1C1C21;
+    border-radius:40px;
+}
+.PriceBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-content: center;
+    align-items: center;
+}
+.InfoBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.OrderContent {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+.OrderDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}

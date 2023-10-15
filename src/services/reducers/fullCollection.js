@@ -9,6 +9,7 @@ const fullCollectionState = {
   collection: [],
   isLoading: false,
   hasError: false,
+  isLoaded: false,
 };
 
 export const fullCollectionReducer = (state = fullCollectionState, action) => {
@@ -17,6 +18,7 @@ export const fullCollectionReducer = (state = fullCollectionState, action) => {
       return {
         ...state,
         collection: action.data,
+        isLoaded: true,
       };
     }
     case GET_INGREDIENTS_REQUEST: {

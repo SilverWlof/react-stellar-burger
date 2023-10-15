@@ -1,6 +1,4 @@
-import {
-  SET_DRAG_STYLE_TYPE
-} from "../actions/utils";
+import { SET_DRAG_STYLE_TYPE } from "../actions/utils";
 
 const utilsState = {
   isDragged: false,
