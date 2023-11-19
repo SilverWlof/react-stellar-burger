@@ -1,0 +1,29 @@
+.navGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px 64px 64px;
+    align-items: center;
+}
+
+.fieldsColumn {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    justify-content: flex-start;
+}
+
+.navColumn {
+    max-width: 320px;
+}
+
+.emptyMargin {
+    margin: 0;
+}
+
+.emptyPadding {
+    padding: 0;
+}
+
+.bigGap {
+    gap: 24px;
+}

@@ -1,0 +1,27 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-position-x: -25vw;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: var(--container-padding);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--container-padding) * 2);
+}
+
+.content {
+    margin: auto;
+}
+
+.link {
+    color: var(--color-title);
+}
+.clearLink {
+    text-decoration: none;
+    color: #4C4CFF;
+}

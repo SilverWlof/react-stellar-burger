@@ -13,6 +13,8 @@
     background: #1C1C21;
     min-width: 720px;
     min-height: 400px;
+    max-height: 90%;
+    max-width: 80%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -20,17 +22,22 @@
     z-index: 1050;
     opacity: 1;
     border-radius: 40px;
+    box-sizing: border-box;
 }
 .ModalBodyContent {
     display: flex;
     flex-direction: column;
     margin: 50px 40px;
     align-items: stretch;
+    box-sizing: border-box;
+    height: 100%;
+    /*height: calc(100%-100px); ??????????????????!*/
 }
 .ModalBodyBody {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 .ModalBodyHeader {
     min-height: 40px;

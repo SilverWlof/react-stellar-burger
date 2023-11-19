@@ -1,0 +1,72 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 128px);
+    background-color: #131316;
+    color: #f2f2f3;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding:40px 0 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: calc(100% - 128px);
+    gap: 20px;
+}
+.centralBlock {
+    display: flex;
+    max-width: 1240px;
+    height: 100%;
+    gap: 40px;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: row;
+    justify-content:stretch;
+}
+.FeedListBlock {
+    width: calc(50% - 30px);
+}
+.statSection {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 30px);
+    gap: 60px;
+}
+
+.numbersListsBlocks {
+    display: flex;
+    flex-direction:row;
+    gap:36px;
+    width:100%;
+}
+.numbersListBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: 206px;
+    width: calc(50% - 43px);
+}
+.numbersList {
+    height: calc(100% - 54px);
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(10, 1fr);
+    grid-auto-columns: auto;
+}
+.cyanTextColor {
+    color: #00CCCC;
+}
+.headerBlock {
+    display: flex;
+    flex-direction: row;
+    max-width: 1240px;
+    padding: 0;
+    width: 100%;
+    justify-content:start;
+}

@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     height: 100%;
+    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -15,4 +16,11 @@
     margin: 0;
     box-sizing: border-box;
     height: 100%;
+}
+.gap4 {
+    gap: 16px;
+}
+
+.gap2 {
+    gap: 8px;
 }

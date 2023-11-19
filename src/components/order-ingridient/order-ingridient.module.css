@@ -1,0 +1,45 @@
+.element {
+    width: 64px;
+    height: 64px;
+    border: 2px solid #801AB2;
+    border-radius: 40px;
+    background-color: #131316;
+    display: grid;
+}
+.needGap {
+    margin: 0 -10px 0;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1;
+}
+.coverText {
+    background: rgba(0,0,0,0.6);
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.z0{
+    z-index:0;
+}
+.z1 {
+    z-index:1;
+}
+.z2 {
+    z-index:2;
+}
+.z3 {
+    z-index:3;
+}
+.z4 {
+    z-index:4;
+}
+.z5 {
+    z-index:5;
+}

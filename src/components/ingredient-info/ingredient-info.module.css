@@ -28,3 +28,7 @@
     align-content: center;
     gap: 10px;
 }
+.preloadImg {
+    width: 400px;
+    height: 260px;
+}

@@ -17,3 +17,7 @@
     padding: 0;
     margin: 0;
 }
+.clearLink {
+    text-decoration: none;
+    color: inherit;
+}
